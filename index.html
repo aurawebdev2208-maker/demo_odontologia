@@ -10,8 +10,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: clip;
-    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
     touch-action: pan-y;
   }
   /* Prevent iOS zoom on inputs */
@@ -21,35 +20,38 @@
   main > :first-child { margin-top: 0 !important; }
   main > :last-child { margin-bottom: 0 !important; }
 }
-</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-container":"#00b17b","secondary-fixed":"#dae2fd","error-container":"#ffdad6","tertiary-fixed":"#6ffbbe","on-surface":"#0b1c30","surface-variant":"#d3e4fe","primary-fixed-dim":"#89ceff","error":"#ba1a1a","on-tertiary-container":"#003b26","inverse-on-surface":"#eaf1ff","secondary-container":"#dae2fd","outline":"#6e7881","on-primary-fixed-variant":"#004c6e","surface-container-lowest":"#ffffff","outline-variant":"#bec8d2","on-error":"#ffffff","on-tertiary-fixed":"#002113","surface":"#f8f9ff","surface-tint":"#006591","on-surface-variant":"#3e4850","on-secondary-fixed-variant":"#3f465c","surface-bright":"#f8f9ff","primary-fixed":"#c9e6ff","on-primary-fixed":"#001e2f","on-secondary":"#ffffff","on-secondary-fixed":"#131b2e","on-primary-container":"#003751","primary-container":"#0ea5e9","on-tertiary-fixed-variant":"#005236","surface-container-low":"#eff4ff","inverse-surface":"#213145","surface-container-high":"#dce9ff","on-tertiary":"#ffffff","background":"#f8f9ff","surface-dim":"#cbdbf5","tertiary":"#006c49","surface-container":"#e5eeff","inverse-primary":"#89ceff","on-secondary-container":"#5c647a","on-background":"#0b1c30","secondary":"#565e74","on-error-container":"#93000a","surface-container-highest":"#d3e4fe","secondary-fixed-dim":"#bec6e0","tertiary-fixed-dim":"#4edea3","on-primary":"#ffffff","primary":"#006591"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xs":"0.25rem","space-lg":"1.5rem","gutter":"1.5rem","gutter-mobile":"1rem","space-sm":"0.5rem","margin":"3rem","space-md":"1rem","margin-mobile":"1.25rem","space-xl":"2.5rem"},fontFamily:{"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"body-lg":["Inter"],"label-md":["Plus Jakarta Sans"]},fontSize:{"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 shadow-[0_4px_20px_-2px_rgba(15,23,42,0.04)]"><div class="bg-surface-container-high/90 backdrop-blur-md px-gutter-mobile lg:px-margin text-on-surface"><div class="max-w-[1280px] mx-auto h-10 flex items-center justify-between text-xs sm:text-body-sm">
+</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-container":"#00b17b","secondary-fixed":"#dae2fd","error-container":"#ffdad6","tertiary-fixed":"#6ffbbe","on-surface":"#0b1c30","surface-variant":"#d3e4fe","primary-fixed-dim":"#89ceff","error":"#ba1a1a","on-tertiary-container":"#003b26","inverse-on-surface":"#eaf1ff","secondary-container":"#dae2fd","outline":"#6e7881","on-primary-fixed-variant":"#004c6e","surface-container-lowest":"#ffffff","outline-variant":"#bec8d2","on-error":"#ffffff","on-tertiary-fixed":"#002113","surface":"#f8f9ff","surface-tint":"#006591","on-surface-variant":"#3e4850","on-secondary-fixed-variant":"#3f465c","surface-bright":"#f8f9ff","primary-fixed":"#c9e6ff","on-primary-fixed":"#001e2f","on-secondary":"#ffffff","on-secondary-fixed":"#131b2e","on-primary-container":"#003751","primary-container":"#0ea5e9","on-tertiary-fixed-variant":"#005236","surface-container-low":"#eff4ff","inverse-surface":"#213145","surface-container-high":"#dce9ff","on-tertiary":"#ffffff","background":"#f8f9ff","surface-dim":"#cbdbf5","tertiary":"#006c49","surface-container":"#e5eeff","inverse-primary":"#89ceff","on-secondary-container":"#5c647a","on-background":"#0b1c30","secondary":"#565e74","on-error-container":"#93000a","surface-container-highest":"#d3e4fe","secondary-fixed-dim":"#bec6e0","tertiary-fixed-dim":"#4edea3","on-primary":"#ffffff","primary":"#006591"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xs":"0.25rem","space-lg":"1.5rem","gutter":"1.5rem","gutter-mobile":"1rem","space-sm":"0.5rem","margin":"3rem","space-md":"1rem","margin-mobile":"1.25rem","space-xl":"2.5rem"},fontFamily:{"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"body-lg":["Inter"],"label-md":["Plus Jakarta Sans"]},fontSize:{"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 shadow-[0_4px_20px_-2px_rgba(15,23,42,0.04)]"><div class="bg-surface-container-high/95 backdrop-blur-md px-4 lg:px-margin text-on-surface border-b border-outline-variant/15"><div class="max-w-[1280px] mx-auto h-9 sm:h-10 flex items-center justify-between text-[11px] sm:text-xs">
   <div class="flex items-center gap-1.5 sm:gap-2">
-    <span class="flex h-2 w-2 rounded-full bg-tertiary-container animate-pulse"></span>
-    <span class="font-label-md text-on-surface flex items-center gap-1">
-      <span class="material-symbols-outlined text-[15px] sm:text-[16px] text-tertiary">emergency</span>
+    <span class="relative flex h-2 w-2">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+    </span>
+    <span class="font-label-md text-on-surface flex items-center gap-1 whitespace-nowrap">
+      <span class="material-symbols-outlined text-[14px] sm:text-[16px] text-tertiary leading-none">emergency</span>
       <span class="hidden sm:inline">Urgencias Odontológicas 24/7</span>
       <span class="sm:hidden font-bold">Guardia 24hs</span>
     </span>
   </div>
-  <div class="flex items-center gap-3">
-    <a class="flex items-center gap-1 font-label-md text-primary hover:text-on-surface transition-colors" href="https://wa.me/5493884567890" rel="noopener noreferrer" target="_blank">
-      <span class="material-symbols-outlined text-[15px] sm:text-[16px] text-tertiary-container">chat</span>
+  <div class="flex items-center">
+    <a class="flex items-center gap-1 font-label-md text-primary hover:text-on-surface transition-colors whitespace-nowrap" href="https://wa.me/5493884567890" rel="noopener noreferrer" target="_blank">
+      <span class="material-symbols-outlined text-[14px] sm:text-[16px] text-tertiary-container leading-none">chat</span>
       <span class="hidden sm:inline">WhatsApp: +54 9 388 456-7890</span>
       <span class="sm:hidden font-bold">WhatsApp Directo</span>
     </a>
   </div>
-</div></div><div class="bg-surface-container-lowest/85 backdrop-blur-xl"><div class="max-w-[1280px] mx-auto h-20 px-gutter-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><a href="#" class="flex items-center transition-opacity hover:opacity-90"><img src="assets/logo.png" alt="OdontoStudio Logo" class="h-10 sm:h-12 w-auto object-contain"></a></div><nav class="hidden lg:flex items-center gap-space-lg">
+</div></div><div class="bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/15"><div class="max-w-[1280px] mx-auto h-16 sm:h-20 px-4 lg:px-margin flex items-center justify-between gap-2 sm:gap-space-md"><div class="flex items-center flex-shrink-0"><a href="#" class="flex items-center transition-opacity hover:opacity-90"><img src="assets/logo.png" alt="OdontoStudio Logo" class="h-8 sm:h-11 w-auto max-w-[150px] sm:max-w-none object-contain"></a></div><nav class="hidden lg:flex items-center gap-space-lg">
   <a class="font-label-lg text-label-lg text-primary font-bold hover:text-primary transition-colors" href="#tratamientos">Tratamientos</a>
   <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#experiencia">Experiencia</a>
   <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#contacto">Pedir Turno</a>
   <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#ubicacion">Ubicación</a>
-</nav><div class="flex items-center gap-2 sm:gap-3">
-  <a class="inline-flex items-center gap-1.5 px-3.5 sm:px-5 py-2 sm:py-2.5 bg-primary-container text-on-primary rounded-full font-label-lg text-xs sm:text-sm font-bold shadow-[0px_8px_24px_-4px_rgba(14,165,233,0.35)] active:scale-95 transition-all" href="#contacto">
-    <span class="material-symbols-outlined text-[18px] sm:text-[20px]">calendar_month</span>
+</nav><div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+  <a class="inline-flex items-center gap-1 sm:gap-1.5 px-3 sm:px-5 py-1.5 sm:py-2.5 bg-primary-container text-on-primary rounded-full font-label-lg text-xs sm:text-sm font-bold shadow-sm sm:shadow-[0px_8px_24px_-4px_rgba(14,165,233,0.35)] active:scale-95 transition-all whitespace-nowrap" href="#contacto">
+    <span class="material-symbols-outlined text-[16px] sm:text-[20px]">calendar_month</span>
     <span class="hidden sm:inline">Agendar Turno</span>
     <span class="sm:hidden">Pedir Turno</span>
   </a>
-  <button id="mobileMenuBtn" type="button" aria-label="Abrir Menú" class="lg:hidden w-10 h-10 rounded-xl text-on-surface flex items-center justify-center hover:bg-surface-container-high active:scale-95 transition-all">
-    <span class="material-symbols-outlined text-[26px]" id="menuIcon">menu</span>
+  <button id="mobileMenuBtn" type="button" aria-label="Abrir Menú" class="lg:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-xl text-on-surface flex items-center justify-center hover:bg-surface-container-high active:scale-95 transition-all flex-shrink-0">
+    <span class="material-symbols-outlined text-[24px] sm:text-[26px]" id="menuIcon">menu</span>
   </button>
 </div></div></div>
 <!-- Mobile Drawer -->
@@ -67,7 +69,7 @@
     </a>
   </div>
 </div>
-</header><main class="w-full pt-[120px] bg-background min-h-screen"><div class="flex flex-col w-full">
+</header><main class="w-full pt-[100px] sm:pt-[120px] bg-background min-h-screen"><div class="flex flex-col w-full">
 
 <!-- HERO SECTION -->
 
@@ -146,13 +148,13 @@
 
 <!-- Right Visual Container (Bento Mosaic) -->
 
-<div class="lg:col-span-6 relative mt-space-md lg:mt-0">
+<div class="lg:col-span-6 relative mt-space-md lg:mt-0 overflow-hidden lg:overflow-visible">
 
 <!-- Glow Backdrops -->
 
-<div class="absolute -top-10 -right-10 w-72 h-72 bg-primary-fixed-dim/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -top-10 -right-10 w-64 sm:w-72 h-64 sm:h-72 bg-primary-fixed-dim/30 rounded-full blur-3xl pointer-events-none"></div>
 
-<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-tertiary-fixed-dim/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-56 sm:w-64 h-56 sm:h-64 bg-tertiary-fixed-dim/20 rounded-full blur-2xl pointer-events-none"></div>
 
 <div class="relative grid grid-cols-12 gap-space-sm sm:gap-space-md">
 
