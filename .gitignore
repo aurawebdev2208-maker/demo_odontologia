@@ -1,0 +1,4 @@
+# Ignorar archivos temporales o de boceto
+raw_stitch.html
+.DS_Store
+Thumbs.db
